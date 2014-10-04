@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -17,6 +16,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.users = [[NSArray alloc] init];
+    self.users = [UserData users];
+    
+    NSLog(@"%@", self.users);
 }
 
 - (void)didReceiveMemoryWarning {

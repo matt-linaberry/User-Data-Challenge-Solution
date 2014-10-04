@@ -14,6 +14,11 @@
 		99E0B52619E0793100D3F8C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E0B52519E0793100D3F8C4 /* Images.xcassets */; };
 		99E0B52919E0793100D3F8C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E0B52719E0793100D3F8C4 /* LaunchScreen.xib */; };
 		99E0B53519E0793100D3F8C4 /* User_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B53419E0793100D3F8C4 /* User_Data_Challenge_SolutionTests.m */; };
+		99E0B54019E0795500D3F8C4 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E0B53F19E0795500D3F8C4 /* UserData.m */; };
+		99E0B54519E082DB00D3F8C4 /* person1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99E0B54119E082DB00D3F8C4 /* person1.jpeg */; };
+		99E0B54619E082DB00D3F8C4 /* person2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99E0B54219E082DB00D3F8C4 /* person2.jpeg */; };
+		99E0B54719E082DB00D3F8C4 /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99E0B54319E082DB00D3F8C4 /* person3.jpg */; };
+		99E0B54819E082DB00D3F8C4 /* person4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99E0B54419E082DB00D3F8C4 /* person4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 		99E0B52E19E0793100D3F8C4 /* User Data Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "User Data Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E0B53319E0793100D3F8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99E0B53419E0793100D3F8C4 /* User_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		99E0B53E19E0795500D3F8C4 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		99E0B53F19E0795500D3F8C4 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		99E0B54119E082DB00D3F8C4 /* person1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person1.jpeg; sourceTree = "<group>"; };
+		99E0B54219E082DB00D3F8C4 /* person2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person2.jpeg; sourceTree = "<group>"; };
+		99E0B54319E082DB00D3F8C4 /* person3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person3.jpg; sourceTree = "<group>"; };
+		99E0B54419E082DB00D3F8C4 /* person4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person4.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +74,8 @@
 		99E0B50C19E0793100D3F8C4 = {
 			isa = PBXGroup;
 			children = (
+				99E0B53E19E0795500D3F8C4 /* UserData.h */,
+				99E0B53F19E0795500D3F8C4 /* UserData.m */,
 				99E0B51719E0793100D3F8C4 /* User Data Challenge Solution */,
 				99E0B53119E0793100D3F8C4 /* User Data Challenge SolutionTests */,
 				99E0B51619E0793100D3F8C4 /* Products */,
@@ -81,6 +94,10 @@
 		99E0B51719E0793100D3F8C4 /* User Data Challenge Solution */ = {
 			isa = PBXGroup;
 			children = (
+				99E0B54119E082DB00D3F8C4 /* person1.jpeg */,
+				99E0B54219E082DB00D3F8C4 /* person2.jpeg */,
+				99E0B54319E082DB00D3F8C4 /* person3.jpg */,
+				99E0B54419E082DB00D3F8C4 /* person4.jpeg */,
 				99E0B51C19E0793100D3F8C4 /* AppDelegate.h */,
 				99E0B51D19E0793100D3F8C4 /* AppDelegate.m */,
 				99E0B51F19E0793100D3F8C4 /* ViewController.h */,
@@ -199,9 +216,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E0B54719E082DB00D3F8C4 /* person3.jpg in Resources */,
+				99E0B54519E082DB00D3F8C4 /* person1.jpeg in Resources */,
 				99E0B52419E0793100D3F8C4 /* Main.storyboard in Resources */,
 				99E0B52919E0793100D3F8C4 /* LaunchScreen.xib in Resources */,
+				99E0B54819E082DB00D3F8C4 /* person4.jpeg in Resources */,
 				99E0B52619E0793100D3F8C4 /* Images.xcassets in Resources */,
+				99E0B54619E082DB00D3F8C4 /* person2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +242,7 @@
 			files = (
 				99E0B52119E0793100D3F8C4 /* ViewController.m in Sources */,
 				99E0B51E19E0793100D3F8C4 /* AppDelegate.m in Sources */,
+				99E0B54019E0795500D3F8C4 /* UserData.m in Sources */,
 				99E0B51B19E0793100D3F8C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
