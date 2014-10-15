@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "UserData.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray *users;
-
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UserData  *aUser;
 @end
 

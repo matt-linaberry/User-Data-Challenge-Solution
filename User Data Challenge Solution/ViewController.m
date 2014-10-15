@@ -18,7 +18,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.users = [[NSArray alloc] init];
     self.users = [UserData users];
-    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     NSLog(@"%@", self.users);
 }
 
@@ -27,4 +28,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.users.count;
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"userCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    UserData *theUser = [self.users objectAtIndex:indexPath.row];
+    cell.textLabel.text = self.aUser.USER_NAME;
+}
 @end
