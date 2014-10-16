@@ -37,7 +37,11 @@
 {
     static NSString *cellIdentifier = @"userCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    UserData *theUser = [self.users objectAtIndex:indexPath.row];
-    cell.textLabel.text = self.aUser.USER_NAME;
+    NSDictionary *theUser = [self.users objectAtIndex:indexPath.row];
+    cell.textLabel.text = theUser[USER_NAME];
+    cell.detailTextLabel.text = theUser[EMAIL];
+    cell.imageView.image = theUser[PROFILE_PICTURE];
+    
+    return cell;
 }
 @end
